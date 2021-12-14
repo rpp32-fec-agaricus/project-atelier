@@ -1,12 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class ProductCard extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+export default function ProductCard({ key, id, image, category, name, price}) {
+  // console.log(category)
+  return (
+    <div key={key}>
+        <h3>{image}</h3>
+        <h3>{category}</h3>
+        <h3>{name}</h3>
+        <h3>{price}</h3>
+    </div>
+  )
 }
+
+
+
+
 
