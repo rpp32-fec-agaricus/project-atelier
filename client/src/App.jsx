@@ -1,7 +1,7 @@
 import React from 'react';
 import Overview from './Components/Overview/Overview.jsx';
-// import token from '../../config.js';
-import ProductList from './Components/Related/ProductList.jsx'
+import token from '../../config.js';
+import Related from './Components/Related/Related.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class App extends React.Component {
     return (
       <div>
         <Overview/>
-        <ProductList sebData={this.props.sebData}/>
+        <Related apiUrl={this.apiUrl}/>
       </div>
     )
   }
