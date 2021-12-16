@@ -6,7 +6,9 @@ import ProductList from './Components/Related/ProductList.jsx'
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      currentProduct: 59553
+    }
     this.apiUrl = 'https://app-hrsei-api.herokuapp.com/api/fec2/hr-rpp'
   }
   render() {
