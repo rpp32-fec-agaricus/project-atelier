@@ -7,7 +7,6 @@ export default function ProductList({ products }) {
     <div className='card-container'>
       {products.map(product =>
         <ProductCard
-          key={product.id}
           id={product.id}
           category={product.category}
           name={product.name}
